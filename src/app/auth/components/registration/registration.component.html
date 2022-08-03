@@ -1,0 +1,81 @@
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <div class="mb-md-5 mt-md-4 pb-5">
+              <h2 class="fw-bold mb-2 text-uppercase">SIGN UP</h2>
+              <p class="text-white-50 mb-5">To sign up please fill the form below!</p>
+              <div class="registration-form" [formGroup]="form">
+                <div class="email-title mb-2">
+                    <span>Email: *</span>
+                </div>
+
+                <div class="mb-3">
+                    <input class="contact-form-input form-control" 
+                        type="text" 
+                        name="regEmail"  
+                        placeholder="Enter Your Email: " 
+                        formControlName="regEmail">
+                    <div class="validation">
+                        <ng-container *ngIf="form.controls['regEmail'].invalid && form.controls['regEmail'].touched">
+                            <span *ngIf="form.controls['regEmail'].errors.required" class="text-danger">
+                            Email field can not be empty
+                            </span>
+                            <span *ngIf="form.controls['regEmail'].errors.email" class="text-danger">
+                            Enter A Valid Email
+                            </span>
+                        </ng-container>
+                    </div>
+                </div>
+                <div class="password-title mb-2">
+                    <span>Password: *</span>
+                </div>   
+
+                <div class="mb-3">
+                    <input class="contact-form-input form-control" 
+                    type="password" 
+                    name="regEmail"  
+                    placeholder="Enter Your Password: " 
+                    formControlName="regPass">
+                    <div class="validation">
+                        <ng-container *ngIf="form.controls['regPass'].invalid && form.controls['regPass'].touched">
+                            <span *ngIf="form.controls['regPass'].errors.required" class="text-danger">
+                                Password field can not be empty
+                            </span>
+                            <span *ngIf="form.controls['regPass'].errors.minlength" class="text-danger" >
+                                Password can not be less than 8 characters. You have filled {{form.controls['regPass'].errors.minlength.actualLength}}
+                            </span>
+                        </ng-container>
+                    </div>      
+                </div>
+                    <div class="password-title mb-2">
+                        <span>Confirm Password: *</span>
+                    </div>      
+                    <div class="mb-3">
+                        <input class="contact-form-input form-control mb-4" 
+                        type="password" 
+                        name="regConfEmail"  
+                        placeholder="Confirm Your Password: " 
+                        formControlName="regConfirmPass">
+                        <div class="validation">
+                            <ng-container *ngIf="form.controls['regConfirmPass'].invalid && form.controls['regConfirmPass'].touched">
+                                <span *ngIf="form.controls['regConfirmPass'].errors.required" class="text-danger">
+                                    Password field can not be empty
+                                </span>
+                                <span *ngIf="form.controls['regConfirmPass'].errors.minlength" class="text-danger">
+                                    Password can not be less than 8 characters. You have filled {{form.controls['regConfirmPass'].errors.minlength.actualLength}}
+                                </span>
+                            <!-- <span class="text-danger">
+                                    Password must be the same as in previous field
+                                </span> -->
+                            </ng-container>
+                        </div>
+                    </div>
+                <button [disabled]="form.invalid" class="btn btn-outline-light btn-lg px-5" type="submit">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

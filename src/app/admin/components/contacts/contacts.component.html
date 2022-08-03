@@ -1,0 +1,30 @@
+<div class="main-wrapper">
+  <div class="d-flex flex-column justify-content-start contacts-wrapper contacts-card">
+    <h2 style="font-weight: 500;" class="filter-by-name">Filter By Name:</h2>
+    <input class="form-control" type="text" placeholder="Search by name:" [(ngModel)]="search">
+    <div style="gap:10px" class="d-flex flex-wrap">
+      <div
+      class="card bg-dark col-5 text-white position-relative"
+      style="border-radius: 1rem"
+      *ngFor="let user of personalList$ | async | filter:search"
+    >
+      <div class="card-body p-2 text-center">
+        <button class="close-btn position-absolute" (click)="deletePerson(user.id)">&#10006;</button>
+        <div>
+          <h5>{{user.name}}</h5>
+          <button class="btn btn-info" [routerLink]="['user', user.id]">
+            Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>  
+  <div class="addNewContact">
+    <div class="contact-form" [formGroup]="form">
+        <button class="btn button-add btn-success" 
+            (click)="addNewPerson()">Add New Contact</button>
+    </div>
+  </div>
+</div>
+

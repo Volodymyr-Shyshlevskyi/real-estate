@@ -1,0 +1,23 @@
+<div class="main-wrapper">
+    <div class="card-wrapper">
+        <div *ngIf="article$ | async as article" class="news-wrapper">
+            <div class="title-img-container">
+                <div class="news-title">
+                    <h1>{{article.title}}</h1>
+                </div>
+                <div class="img-container">
+                    <img class="news-img" [src]="article.imgUrl" alt="">
+                </div>
+            </div>
+                <div class="text-container">
+                    <div class="news-text" [innerHTML]="article.content"></div>
+                </div>
+        
+            <div class="row author-created-container">
+                <div class="author col-md-4"><p><img class="author-icon" src="https://icon-library.com/images/author-icon/author-icon-21.jpg" alt="Author:">{{article.author}}</p></div>
+                <div class="created_at col-md-4 col-md-offset-4"><p><img class="date-icon" src="https://uxwing.com/wp-content/themes/uxwing/download/13-time-date/date-and-time.png" alt="Date:">{{article.created_at | date: 'YYYY-MM-dd'}}</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+

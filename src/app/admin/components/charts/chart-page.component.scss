@@ -1,0 +1,15 @@
+.wrapper {
+    margin: auto;
+    width: 80%;
+}
+
+.city-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    ngx-select {
+        width: 200px;
+    }
+}
+

@@ -1,0 +1,62 @@
+<div class="contact-modal-wrapper">
+  <h2>New Contact:</h2>
+  <div class="contact-form" [formGroup]="form">
+    <div class="mb-3">
+      <input class="contact-form-input form-control" 
+              type="text" 
+              name="contactsName"  
+              placeholder="Enter Name:" 
+              formControlName="name">
+              <div class="validation">
+                <ng-container *ngIf="form.controls['name'].invalid && form.controls['name'].touched">
+                  <span class="text-danger" *ngIf="form.controls['name'].errors.required">
+                    Email field can not be empty
+                  </span>
+                <span class="text-danger" *ngIf="form.controls['name'].errors.minlength">
+                  Your full name can not be less than 8 characters. You have filled {{form.controls['name'].errors.minlength.actualLength}}
+                </span>
+                </ng-container>
+              </div>
+    </div>
+
+    <div class="mb-3">
+      <input class="contact-form-input form-control" 
+              type="text" name="contactsEmail" 
+              placeholder="Enter Email:" 
+              formControlName="email">
+              <div class="validation">
+                <ng-container *ngIf="form.controls['email'].invalid && form.controls['email'].touched">
+                  <span class="text-danger" *ngIf="form.controls['email'].errors.required">
+                    Email field can not be empty
+                  </span>
+                  <span class="text-danger" *ngIf="form.controls['email'].errors.email">
+                    Enter correct email
+                  </span>
+                </ng-container>
+              </div>
+    </div>
+
+    <div class="mb-3">
+      <input class="contact-form-input form-control" 
+              type="text" 
+              name="contactsTelNumber" 
+              placeholder="Enter Telephone:" 
+              formControlName="telNumber">
+              <div class="validation">
+                <ng-container *ngIf="form.controls['telNumber'].invalid && form.controls['telNumber'].touched">
+                  <span class="text-danger" *ngIf="form.controls['telNumber'].errors.required">
+                    Telephone number can not be empty
+                  </span>
+                  <span class="text-danger" *ngIf="form.controls['telNumber'].errors.pattern">
+                    Telephone number should contain only digits
+                  </span>
+                </ng-container>
+              </div>
+    </div>
+
+  </div>
+  <div class="d-flex flex-row justify-content-between">
+      <button (click)="dialogRef.close()" class="btn btn-secondary">Close</button>
+      <button (click)="save()" class="btn button-add btn-success">Save</button>
+  </div>
+</div>

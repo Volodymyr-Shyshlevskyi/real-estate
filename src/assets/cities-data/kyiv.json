@@ -1,0 +1,72 @@
+[
+    {
+      "date": "1.1.2022",
+      "mediana": 1000,
+      "maxValue": 5000,
+      "minValue": 560,
+      "volume": 50
+    },
+    {
+      "date": "2.1.2022",
+      "mediana": 1100,
+      "maxValue": 6500,
+      "minValue": 850,
+      "volume": 60
+    },
+    {
+      "date": "3.1.2022",
+      "mediana": 1150,
+      "maxValue": 5500,
+      "minValue": 650,
+      "volume": 50
+    },
+    {
+      "date": "4.1.2022",
+      "mediana": 950,
+      "maxValue": 4700,
+      "minValue": 500,
+      "volume": 80
+    },
+    {
+      "date": "5.1.2022",
+      "mediana": 650,
+      "maxValue": 3000,
+      "minValue": 400,
+      "volume": 100
+    },
+    {
+      "date": "6.1.2022",
+      "mediana": 1150,
+      "maxValue": 8500,
+      "minValue": 900,
+      "volume": 50
+    },
+    {
+      "date": "7.1.2022",
+      "mediana": 1200,
+      "maxValue": 5000,
+      "minValue": 800,
+      "volume": 40
+    },
+    {
+      "date": "8.1.2022",
+      "mediana": 1250,
+      "maxValue": 2000,
+      "minValue": 700,
+      "volume": 30
+    },
+    {
+      "date": "9.1.2022",
+      "mediana": 1000,
+      "maxValue": 3000,
+      "minValue": 850,
+      "volume": 30
+    },
+    {
+      "date": "10.1.2022",
+      "mediana": 1100,
+      "maxValue": 2500,
+      "minValue": 550,
+      "volume": 40
+    }
+  ]

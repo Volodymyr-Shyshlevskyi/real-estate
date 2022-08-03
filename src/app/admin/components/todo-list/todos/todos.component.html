@@ -1,0 +1,32 @@
+<div class="todo-wrapper">
+  <app-todo-form></app-todo-form>
+
+<div *ngIf="!loading">
+
+    <div class="filter">
+      <input
+        type="text"
+        placeholder="Filter todo by title..."
+        [(ngModel)]="searchString"
+      >
+    </div>
+
+    <ul *ngIf="todosService.todosList$ | async as todos; else noTodos" class="todos-text">
+      <li *ngFor="let todo of todos | todosFilter:searchString; let i = index">
+        <span [class.done]="todo.completed">
+          <input type="checkbox" [checked]="todo.completed" (change)="onChange(todo.id)">
+          <strong>{{i + 1}}</strong> {{ todo.text }}
+        </span>
+  
+        <small>{{todo.created_at | date:'medium'}}</small>
+  
+        <button class="rm" (click)="removeTodo(todo.id)">&times;</button>
+      </li>
+    </ul>
+  
+    <ng-template #noTodos>
+      <p style="text-align: center;">No todos now!</p>
+    </ng-template>
+</div>
+<p *ngIf="loading">Loading....</p>
+</div>

@@ -1,0 +1,12 @@
+<div class="todo-title">
+  <h2 style="font-weight: 500;">To Do List:</h2>
+</div>
+<div>
+    <input
+      type="text"
+      placeholder="Add todo title..."
+      [(ngModel)]="text"
+      (keydown.enter)="addTodo()"
+    >
+    <button class="add-todo" (click)="addTodo()">Add todo</button>
+</div>

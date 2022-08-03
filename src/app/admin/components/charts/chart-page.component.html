@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div style="text-align:center; padding: 25px 100px;">
+    <div class="city-select">
+      <span style="font-weight: 500; font-size: 20px;">Price Analytics By City</span>
+      <span style="font-size: 17px;">Please Select The City:</span>
+      <ngx-select [items]="items" [(ngModel)]="currentCity" (ngModelChange)="onCityChange($event)"></ngx-select>
+    </div>
+    <div *ngIf="dataIsLoaded">
+      <app-prices-chart [data]="data"></app-prices-chart>
+      <app-volume-chart [data]="data"></app-volume-chart>
+    </div>
+  </div>
+</div>

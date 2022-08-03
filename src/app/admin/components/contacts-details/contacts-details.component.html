@@ -1,0 +1,15 @@
+<div class="col-4 mx-2 mt-2 wrapper">
+  <div class="card bg-dark text-white mt-2" style="border-radius: 1rem">
+    <div class="card-body p-2 text-center">
+      <div>
+        <h5>Contact Details:</h5>
+        <section *ngIf="user | async as user">
+          <p>{{user.name}}</p>
+          <p>{{user.email}}</p>
+          <p>{{user.telNumber}}</p>
+        </section>
+      </div>
+      <button class="btn btn-primary" [routerLink]="['../']">Go Back</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="news-wrapper">
+    <div class="d-flex flex-wrap overflow-hidden news-cards-wrapper justify-content-center">
+      <div
+        class="card bg-dark text-white mt-2 news-card"
+        style="border-radius: 1rem; cursor: pointer;"
+        [routerLink]="[item.id]"
+        *ngFor="let item of newsService.newsList$ | async"
+      >
+        <div class="card-body text-center h-100 d-flex flex-column justify-content-between align-items-center">
+            <h2>{{item.title}}</h2>
+            <p>{{item.short_description}}</p>
+            <img class="news-img" src={{item.imgUrl}} alt="img">
+        </div>
+      </div>
+    </div>  
+  </div>

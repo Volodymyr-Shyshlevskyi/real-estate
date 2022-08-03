@@ -1,0 +1,88 @@
+{
+    "news": [
+        {
+            "id": 1,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://www.novosel-s.ru/_pu/2/72460548.jpg"
+
+        },
+        {
+            "id": 2,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://inbusiness.kz/uploads/2022-2/lwDV8rcm.jpg"
+
+        },
+        {
+            "id": 3,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://www.inform.kz/radmin/news/2021/02/11/210211131833295a3752003i.jpg"
+
+        },
+        {
+            "id": 4,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://www.novosel-s.ru/_pu/3/45915819.png"
+
+        },
+        {
+            "id": 5,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://ampravda.ru/files/articles-2/111394/utw3a9x9ogoy-640.jpg"
+
+        },
+        {
+            "id": 6,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://apostrophe.ua/uploads/image/e94199557af32ee6e841eb88825cfed9.jpg"
+
+        },
+        {
+            "id": 7,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://s0.rbk.ru/v6_top_pics/media/img/0/91/756171032584910.jpg"
+
+        },
+        {
+            "id": 8,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://www.sibdom.ru/images/photo_crop_1050_700/news/14/101c9cbf.jpg"
+
+        },
+        {
+            "id": 9,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://a-r-e-n-d-a.ru/wp-content/uploads/2018/11/141215.jpg"
+
+        },
+        {
+            "id": 10,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://est.ua/f/_articles/blogs/g07r66mq7wjskqtibe7tf1ih1prygnf4.jpg"
+
+        },
+        {
+            "id": 11,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://static.ngs.ru/news/2015/99/preview/8cf30257cd7492a029faec754ca289870dc38724_1000_600.jpg"
+
+        },
+        {
+            "id": 12,
+            "title": "Excepteur sint occaecat cupidatat",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+            "imgUrl": "https://novation-nn.ru/wp-content/uploads/2021/11/analiz_rynka.jpg"
+
+        }
+]
+}
